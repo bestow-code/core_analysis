@@ -1,0 +1,10 @@
+name: core_analysis
+description: Dart analysis_options for Core projects
+version: 0.1.0+1
+
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  very_good_analysis: ^5.1.0
