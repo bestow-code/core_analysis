@@ -3,3 +3,5 @@
 pubspec.lock
 .DS_Store
 .idea
+.terraform/
+*.tfstate

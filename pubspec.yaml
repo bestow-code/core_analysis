@@ -1,5 +1,5 @@
 name: core_analysis
-version: 0.1.0+1
+version: 0.0.0
 publish_to: https://onepub.dev/api/ffuuhnofly/
 description: Dart analysis_options for Core projects
 environment: 
