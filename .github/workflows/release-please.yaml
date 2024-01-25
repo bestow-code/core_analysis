@@ -23,10 +23,11 @@ jobs:
 #        env:
 #          ONEPUB_TOKEN: ${{ secrets.onepub_token }}
       - uses: google-github-actions/release-please-action@v4
+        id: release
         with:
           token: ${{ secrets.release_please_token }}
           release-type: dart
       - name: Enable Pull Request Automerge
-        run: gh pr merge --merge --auto "1"
+        run: gh pr merge --merge --auto ${{ steps.release.outputs.pr }}
         env:
           GH_TOKEN: ${{ secrets.release_please_token }}
