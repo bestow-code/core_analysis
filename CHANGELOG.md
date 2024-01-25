@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/bestow-code/core_analysis/compare/v0.3.0...v0.3.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* try json ([#26](https://github.com/bestow-code/core_analysis/issues/26)) ([891f284](https://github.com/bestow-code/core_analysis/commit/891f28493076773d66df077ab23d3a249fe883d5))
+
 ## [0.3.0](https://github.com/bestow-code/core_analysis/compare/v0.2.2...v0.3.0) (2024-01-25)
 
 
