@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6](https://github.com/bestow-code/core_analysis/compare/v0.3.5...v0.3.6) (2024-01-25)
+
+
+### Bug Fixes
+
+* release workflow ([#45](https://github.com/bestow-code/core_analysis/issues/45)) ([02cb7d0](https://github.com/bestow-code/core_analysis/commit/02cb7d0731a494295bccb1193534e825abad6d4b))
+
 ## [0.3.5](https://github.com/bestow-code/core_analysis/compare/v0.3.4...v0.3.5) (2024-01-25)
 
 
