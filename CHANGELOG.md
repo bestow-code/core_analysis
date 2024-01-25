@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/bestow-code/core_analysis/compare/v0.1.1...v0.1.2) (2024-01-25)
+
+
+### Bug Fixes
+
+* repo url syntax ([541086e](https://github.com/bestow-code/core_analysis/commit/541086e3eaf76ce89f7018bb15f52bbe821daba2))
+
 ## [0.1.1](https://github.com/bestow-code/core_analysis/compare/v0.1.0...v0.1.1) (2024-01-25)
 
 
