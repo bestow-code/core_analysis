@@ -11,5 +11,14 @@ jobs:
       - uses: dart-lang/setup-dart@v1
       - name: Install Dependencies
         run: dart pub get
+      - name: Check for test dependency
+        id: check-test-dependency
+        run: |
+          if grep -q 'test:' pubspec.yaml; then
+            echo "test_dependency=true" >> $GITHUB_ENV
+          else
+            echo "test_dependency=false" >> $GITHUB_ENV
+      - name: Test
+        if: env.test_dependency == 'true'
       - name: Test
         run: dart test
