@@ -1,5 +1,5 @@
 name: core_analysis
-version: 0.3.0
+version: 0.3.1
 repository: https://github.com/bestow-code/core_analysis
 description: Dart analysis_options for Core projects
 environment: 
