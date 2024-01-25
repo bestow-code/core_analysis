@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/bestow-code/core_analysis/compare/v0.1.2...v0.2.0) (2024-01-25)
+
+
+### Features
+
+* fake bump ([#9](https://github.com/bestow-code/core_analysis/issues/9)) ([4a71723](https://github.com/bestow-code/core_analysis/commit/4a71723e400dc2dc24260ce6c71ccceac0fd4225))
+
 ## [0.1.2](https://github.com/bestow-code/core_analysis/compare/v0.1.1...v0.1.2) (2024-01-25)
 
 
