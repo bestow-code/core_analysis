@@ -26,3 +26,7 @@ jobs:
         with:
           token: ${{ secrets.release_please_token }}
           release-type: dart
+      - name: Enable Pull Request Automerge
+        run: gh pr merge --merge --auto "1"
+        env:
+          GH_TOKEN: ${{ secrets.release_please_token }}
