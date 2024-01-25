@@ -11,7 +11,7 @@ permissions:
 name: release-please
 
 jobs:
-  onepub-import:
+  release-please:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
@@ -22,9 +22,6 @@ jobs:
       - run: onepub import
         env:
           ONEPUB_TOKEN: ${{ secrets.onepub_token }}
-  release-please:
-    runs-on: ubuntu-latest
-    steps:
       - uses: google-github-actions/release-please-action@v4
         with:
           token: ${{ secrets.release_please_token }}
