@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/bestow-code/core_analysis/compare/v0.2.2...v0.3.0) (2024-01-25)
+
+
+### Features
+
+* aider: Corrected the script to properly access the pull request number when attempting to enable automerge. ([#25](https://github.com/bestow-code/core_analysis/issues/25)) ([3571d8d](https://github.com/bestow-code/core_analysis/commit/3571d8ddc7cd3e03af42c13000e918e1e05d2a41))
+* fake ([#23](https://github.com/bestow-code/core_analysis/issues/23)) ([7b25a0a](https://github.com/bestow-code/core_analysis/commit/7b25a0a8fc7960c2d4312969dfa00a52c6c9291d))
+
 ## [0.2.2](https://github.com/bestow-code/core_analysis/compare/v0.2.1...v0.2.2) (2024-01-25)
 
 
