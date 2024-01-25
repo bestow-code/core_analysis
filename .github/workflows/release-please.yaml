@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.release_please_token }}
           release-type: dart
       - name: Enable Pull Request Automerge
-        if: steps.release.outputs.prs_created && steps.release.outputs.pr != 'null'
+        if: steps.release.outputs.prs_created && steps.release.outputs.pr != null
         run: gh pr merge --merge --auto ${{ fromJson(steps.release.outputs.pr).number }}
         env:
           GH_TOKEN: ${{ secrets.release_please_token }}
