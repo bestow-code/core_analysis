@@ -1,0 +1,21 @@
+name: test
+on:
+  push:
+permissions:
+  pull-requests: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - id: check-test-dependency
+        run: |
+          if grep -q 'test:' pubspec.yaml; then
+            echo "test_dependency=true" >> $GITHUB_ENV
+          else
+            echo "test_dependency=false" >> $GITHUB_ENV
+          fi
+      - if: env.test_dependency == 'true'
+        run: dart test
