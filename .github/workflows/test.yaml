@@ -16,5 +16,6 @@ jobs:
             echo "test_dependency=true" >> $GITHUB_ENV
           else
             echo "test_dependency=false" >> $GITHUB_ENV
+          fi
       - if: env.test_dependency == 'true'
         run: dart test
