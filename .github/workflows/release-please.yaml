@@ -17,11 +17,11 @@ jobs:
       - uses: actions/checkout@v4.1.1
       - uses: dart-lang/setup-dart@v1
 
-      - name: Install onepub
-        run: dart pub global activate onepub
-      - run: onepub import
-        env:
-          ONEPUB_TOKEN: ${{ secrets.onepub_token }}
+#      - name: Install onepub
+#        run: dart pub global activate onepub
+#      - run: onepub import
+#        env:
+#          ONEPUB_TOKEN: ${{ secrets.onepub_token }}
       - uses: google-github-actions/release-please-action@v4
         with:
           token: ${{ secrets.release_please_token }}
