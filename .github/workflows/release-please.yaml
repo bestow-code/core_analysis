@@ -27,6 +27,18 @@ jobs:
         with:
           token: ${{ secrets.release_please_token }}
           release-type: dart
+      - name: Add automerge label
+        if: steps.release.outputs.pr
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ steps.release.outputs.pr }},
+              labels: ['automerge']
+            })
       - name: Enable Pull Request Automerge
         run: gh pr merge --merge --auto ${{ steps.release.outputs.pr }}
         env:
