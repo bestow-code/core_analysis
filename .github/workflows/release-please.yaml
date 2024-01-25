@@ -40,10 +40,6 @@ jobs:
 #              labels: ['automerge']
 #            })
       - name: Enable Pull Request Automerge
-        run: echo "${{ steps.release.outputs }}"
-        env:
-          GH_TOKEN: ${{ secrets.release_please_token }}
-      - name: Enable Pull Request Automerge
-        run: gh pr merge --merge --auto ${{ steps.release.outputs.pr }}
+        run: gh pr merge --merge --auto ${{ steps.release.outputs.pr.number }}
         env:
           GH_TOKEN: ${{ secrets.release_please_token }}
