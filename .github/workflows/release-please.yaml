@@ -1,0 +1,31 @@
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+
+jobs:
+  onepub-import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: dart-lang/setup-dart@v1
+
+      - name: Install onepub
+        run: dart pub global activate onepub
+      - run: onepub import
+        env:
+          ONEPUB_TOKEN: ${{ secrets.onepub_token }}
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        with:
+          token: ${{ secrets.release_please_token }}
+          release-type: dart

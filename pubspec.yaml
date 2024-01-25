@@ -1,10 +1,8 @@
 name: core_analysis
+version: 0.0.0
+publish_to: https://onepub.dev/api/ffuuhnofly/
 description: Dart analysis_options for Core projects
-version: 0.1.0+1
-
-
-environment:
-  sdk: ">=3.0.0 <4.0.0"
-
-dependencies:
+environment: 
+  sdk: '>=3.0.0 <4.0.0'
+dependencies: 
   very_good_analysis: ^5.1.0
